@@ -9,7 +9,7 @@ local function save_value(msg, name, value)
   end
   if hash then
     redis:hset(hash, name, value)
-    return "انجام شد"
+    return "Done!"
   end
 end
 local function get_variables_hash(msg)
